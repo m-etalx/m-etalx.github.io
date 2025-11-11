@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "MetalX ",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/metalx_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://m-etalx.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://m-etalx.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "v1fhbbj24u",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "MetalX | Home | Official Site",
+        "meta_descr": "MetalX is engaged in nonferrous scrap processing, consulting & management services, and the application of new technologies for aluminum and copper recycling.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/metalx.png\" alt=\"Metalx\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "v2dW4alTqr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>MetalX: Transforming the Future of Decentralized Finance and Trading</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  As the world increasingly shifts towards digital finance, decentralized platforms are becoming essential in shaping the future of trading and asset management. In this arena, <a href=\"https://m-etalx.github.io/\" class=\"text-primary\">MetalX</a> emerges as a groundbreaking exchange and DeFi platform designed to provide users with an efficient and secure environment for trading cryptocurrencies and managing digital assets. Through innovative features and a strong commitment to security, MetalX aims to redefine the user experience in decentralized finance (DeFi). This article explores the vision and functionality of MetalX, its key features, benefits, challenges, and potential impact on the broader cryptocurrency ecosystem.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is MetalX?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Overview<br><a href=\"https://app.metalx.com/swap\" class=\"text-primary\">MetalX</a> is a decentralized exchange (DEX) built on a secure blockchain infrastructure that facilitates the trading of a variety of cryptocurrencies and tokenized assets. By utilizing advanced blockchain technology, MetalX enables users to trade directly from their wallets without the need for intermediaries, ensuring full control over their funds and a secure trading environment. The platform operates with a focus on enhancing liquidity, user experience, and community engagement, making it an attractive option for both novice and seasoned traders.<br><br>Vision and Mission<br>MetalX envisions building an inclusive financial ecosystem where users can trade assets freely, transparently, and securely. Its mission is to democratize access to digital finance by providing a robust platform that combines ease of use with advanced trading features, ultimately empowering users to manage their financial futures.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of MetalX</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Decentralized Trading<br>One of the standout features of MetalX is its decentralized trading model. Users can trade assets directly from their wallets, eliminating the risks associated with centralized exchanges, such as hacks and asset mismanagement. This non-custodial approach aligns with the principles of blockchain technology by promoting user autonomy and reducing reliance on third parties.<br><br>2. Advanced Order Types<br>MetalX offers a variety of advanced order types to cater to different trading strategies. Users can place market orders, limit orders, and stop-loss orders, allowing them to execute trades with greater precision. This flexibility enables traders to implement various strategies, from day trading to long-term investing.<br><br>3. Liquidity Pools and Staking<br>To enhance trading efficiency, MetalX features liquidity pools that allow users to provide liquidity for various trading pairs. Users can deposit their assets into these pools and earn rewards in the form of transaction fees. Additionally, MetalX offers staking opportunities, enabling users to earn passive income on their holdings while contributing to platform liquidity.<br><br>4. User-Friendly Interface<br>MetalX prioritizes user experience with a clean and intuitive interface. The platform is designed to be accessible for users of all experience levels, providing easy navigation and clear information about trading pairs, prices, and market trends. The user-friendly design encourages broader participation in decentralized finance.<br><br>5. Security Measures<br>Security is paramount in the cryptocurrency space, and MetalX implements advanced security protocols to protect user funds and data. The platform employs end-to-end encryption, regular smart contract audits, and robust wallet integration to ensure the safety of users' assets and information.<br><br>6. Cross-Chain Compatibility<br>Innovatively designed, MetalX supports cross-chain trading, allowing users to navigate multiple blockchain networks seamlessly. This feature enhances the platform's versatility, enabling users to trade a broader range of assets beyond just those native to a single blockchain.<br><br>7. Community Governance<br>MetalX embraces decentralized governance, allowing users to participate actively in decision-making processes. Token holders can propose changes, vote on platform upgrades, and influence strategic direction, fostering a sense of community ownership and collaboration.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Using MetalX</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Full Control Over Assets<br>MetalX’s decentralized nature provides users with full control over their funds, reducing the risk associated with centralization. Traders can execute transactions directly from their wallets, ensuring greater security and peace of mind.<br><br>2. Enhanced Liquidity<br>By encouraging liquidity provision through liquidity pools and staking, MetalX enhances overall market liquidity. High liquidity benefits all users by enabling faster execution of trades and minimizing slippage.<br><br>3. Personalization and Flexibility<br>The availability of advanced order types allows traders to personalize their trading experience based on their individual strategies. This flexibility enhances users' ability to react quickly to market changes.<br><br>4. Cost-Effective Trading<br>With lower fees compared to many centralized exchanges, MetalX offers a cost-effective solution for trading. Users can save on transaction costs, making it more favorable for frequent traders.<br><br>5. Transparent Operations<br>MetalX operates on a transparent blockchain model, allowing users to verify transactions and liquidity movements independently. This transparency builds trust and confidence within the user community.<br><br>6. Opportunities for Passive Income<br>Through liquidity provision and staking, users can earn passive income on their assets, enhancing the potential for returns on their investments.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Get Started with MetalX</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Step 1: Create a Wallet<br>To use MetalX, users must first create a compatible cryptocurrency wallet. Options include popular wallets like MetaMask, Trust Wallet, and hardware wallets, which offer enhanced security for digital assets.<br><br>Step 2: Fund Your Wallet<br>Once the wallet is set up, users can purchase cryptocurrencies from exchanges or other platforms. Transferring assets to the MetalX-compatible wallet is essential for trading on the platform.<br><br>Step 3: Access MetalX<br>With a funded wallet in hand, users can access the MetalX platform through its official website. Users can connect their wallets to streamline the trading process.<br><br>Step 4: Start Trading<br>Users can browse trading pairs and utilize MetalX’s advanced order types to execute trades. The intuitive interface provides all necessary information, enabling users to make well-informed decisions.<br><br>Step 5: Provide Liquidity and Stake<br>For users interested in earning rewards, participating in liquidity pools and staking pools is straightforward. By depositing assets, users can contribute to the platform's liquidity while earning passive income.<br><br>Step 6: Engage with the Community<br>MetalX encourages users to participate in community discussions and governance. Active community engagement fosters collaboration and enables users to contribute to the platform's future direction.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Market Volatility<br>The cryptocurrency market is notoriously volatile, with prices often fluctuating dramatically within short periods. Traders must be prepared for potential losses and adopt risk management strategies to protect their investments.<br><br>2. Learning Curve<br>While MetalX strives for usability, newcomers to decentralized finance may still face a learning curve. Understanding liquidity pools, staking, and advanced trading mechanisms requires some familiarity with blockchain concepts.<br><br>3. Security Concerns<br>Despite robust security measures, users should practice good security hygiene. This includes safeguarding private keys, using secure connections, and staying informed about phishing attempts.<br><br>4. Regulatory Environment<br>As the DeFi sector grows, regulatory scrutiny is likely to increase. MetalX must navigate potential regulations while maintaining its commitment to decentralization and user empowerment.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of MetalX</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Expanding Asset Support<br>To maintain competitiveness, MetalX may expand its asset offerings to include additional cryptocurrencies and tokens. This expansion can attract a broader user base and enable more trading opportunities.<br><br>2. Enhanced User Features<br>MetalX could incorporate advanced features such as margin trading, automated trading bots, and more sophisticated analytical tools, empowering users with more options for executing their trading strategies.<br><br>3. Building Strategic Partnerships<br>Collaborating with other DeFi projects can enhance MetalX’s ecosystem by providing users with integrated services, such as lending, borrowing, or yield farming functionalities.<br><br>4. Increased Community Initiatives<br>Fostering a strong community through events, webinars, and forums can enhance user engagement and provide valuable insights for the platform’s development. Building a dedicated community can be a significant factor in driving MetalX’s growth.<br><br>5. Global Outreach<br>As interest in decentralized finance grows worldwide, MetalX may focus on expanding into emerging markets. Tailoring strategies to local contexts can enhance user acquisition and engagement in those regions.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">MetalX is poised to play a transformative role in the decentralized finance landscape, offering a platform that prioritizes user control, security, and transparency. With its innovative features and commitment to enhancing the trading experience, MetalX aims to simplify the complexities of cryptocurrency trading while empowering users to manage their financial futures effectively.<br><br>As the platform continues to evolve and adapt to users’ needs, it has the potential to reshape how individuals interact with digital assets. Whether you are a casual trader, a liquidity provider, or an active investor, MetalX provides the necessary tools and resources to navigate the world of decentralized finance confidently.<br><br>In a future where decentralized finance becomes increasingly integral to the global economy, MetalX exemplifies the potential for innovation, security, and financial empowerment. Embrace the opportunities that MetalX presents and embark on your journey into the decentralized world of trading.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "v2dW4ogPGs",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
